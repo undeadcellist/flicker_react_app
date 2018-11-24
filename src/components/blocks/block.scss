@@ -1,0 +1,29 @@
+.block{
+  position: relative;
+  background-color: #eee;
+  padding: 5px;
+  color: black;
+  border: $standardBorder;
+  border-radius: 3px;
+  text-decoration: none;
+  z-index: 1;
+  animation: fadein 1s ;
+  animation-fill-mode: forwards;
+  @hover{
+    color: black;
+  }
+  .block_image{
+    width: 100%;
+  }
+
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+    top:200px;
+  }
+  100%{
+    opacity:1;
+    top:0;
+  }
+}

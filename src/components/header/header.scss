@@ -1,0 +1,35 @@
+.header{
+  position: fixed;
+  top:0px;
+  width: 100%;
+  border-bottom:1px solid black;
+  height: 55px;
+  background-color: white;
+  z-index: 10;
+  .header_title{
+    margin-left: 5px;
+
+  }
+  .header_button_holder{
+    text-align: center;
+  .header_button{
+    display: inline-block;
+    border: $standardBorder;
+    border-radius: $radius;
+    padding: 5px;
+    margin-bottom: 5px;
+    &:hover{
+      background-color: orange;
+      cursor: pointer;
+    }
+  }
+  .header_textinput{
+    border: $standardBorder;
+    border-radius: $radius;
+    padding: 5px;
+    height:20px;
+    margin-bottom: 5px;
+    width: 180px;
+  }
+}
+}

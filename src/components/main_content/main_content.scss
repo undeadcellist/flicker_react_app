@@ -1,0 +1,17 @@
+.main_content{
+  margin-top:60px;
+  ul.main_content_list{
+    column-count: 4;
+    column-gap: .5em;
+   list-style-type: none;
+   li.main_content_list_item{
+    display: inline-block;
+    margin: 0 0 .5em .5em;
+    width: 100%;
+    border-radius: $radius;
+   }
+  }
+  a{
+    text-decoration: none;
+  }
+}

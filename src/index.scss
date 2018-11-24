@@ -1,0 +1,76 @@
+$green:#aafc37;
+$red:red;
+$spacer:5px;
+$radius:5px;
+$standardBorder:1px solid #eee;
+body{
+  margin:0;
+  padding:0;
+}
+
+
+
+.loading {
+    display: block;
+    height: 10px;
+    border-radius: $radius;
+    background-color: #ccc;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading:after, .loading:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0%;
+    border-radius: $radius;
+    background-color: $green;
+}
+
+.loading:before {
+    animation: loading1 5s linear 0s infinite;
+    z-index: 10;
+}
+
+.loading:after {
+    animation: loading2 5s linear 2.5s infinite;
+    z-index: 20;
+}
+
+@keyframes loading1 {
+  0%{
+    width: 10%;
+    margin-left: -10%;
+  }
+  50%,100%{
+    width: 50%;
+    margin-left: 100%;
+  }
+}
+
+@keyframes loading2 {
+  0%{
+    width: 50%;
+    margin-left: -50%;
+  }
+  50%,100%{
+    width: 10%;
+    margin-left: 100%;
+  }
+}
+
+.err{
+  text-align: center;
+  font-weight: bold;
+  border:1px solid $red;
+  cursor: pointer;
+  small{
+    display: block;
+  }
+}
+@import "./components/main_content/main_content";
+@import "./components/header/header";
+@import "./components/blocks/block";
